@@ -1,0 +1,217 @@
+
+.btn_keipro{
+	text-align: center;
+	font-size: 16px;
+	padding: 6px;
+	border-radius: 10px;
+	margin: 0px 20px 10px 0px;
+	min-width: 80px;
+	height: 40px;
+	font-weight: bold;
+	/*box-shadow: 0px 2px 0px 0px #398439;*/
+	/*border: 1px solid #398439;*/
+}
+
+.btn_popup{
+    text-align: center;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 10px;
+    margin: 0px 20px 10px 0px;
+    min-width: 80px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.btn_scpecial{
+    padding-top: 25px;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 10px;
+    margin: 0px 20px 10px 0px;
+    min-width: 80px;
+    height: 40px;
+    font-weight: bold;
+}
+.btn_table{
+        text-align: center;
+	font-size: 16px;
+	padding: 6px;
+	border-radius: 10px;
+	margin: 0px 20px 10px 0px;
+	min-width: 80px;
+	height: 40px;
+	font-weight: bold;
+    }
+.emal_header .btn{
+	text-align: center;
+	font-size: 16px;
+	padding: 6px;
+	border-radius: none;
+	margin: 0px 3px 10px 20px;
+	font-weight: bold;
+	box-shadow: 0px 2px 0px 0px #398439;
+	border: 1px solid #398439;
+}
+
+
+.emailing{
+	margin-top: 0;
+	background-color: #ffffff;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.emailing .btn{
+	margin-left: 5px;
+}
+
+
+.email_details .btn{
+	box-shadow: none;
+    border: 0;
+}
+
+
+
+/*Response Desing*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 540px) {
+    .btn_keipro{
+        text-align: center;
+	font-size: 22px;
+	padding: 3px;
+        color: #fff !important;
+	border-radius: 10px;
+	margin: 0px 10px 10px 0px;
+	min-width: 80px;
+	height: 90px;
+        font-weight: normal;
+    }
+    
+    .btn_scpecial{
+        padding-top: 25px;
+        text-align: center;
+	font-size: 22px;
+        color: #fff !important;
+	border-radius: 10px;
+	margin: 0px 10px 10px 0px;
+	min-width: 80px;
+	height: 90px;
+        font-weight: normal;
+    }
+    
+    .btn_table{
+        text-align: center;
+	font-size: 22px;
+	padding: 3px 15px;
+        color: #fff !important;
+	border-radius: 10px;
+	margin: 0px 10px 10px 0px;
+	min-width: 80px;
+	height: 90px;
+        font-weight: normal;
+    }
+    
+    .word_btn_container{
+        height: 480px; 
+        position: fixed;
+        overflow-x:hidden; 
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    
+    .popup_button{
+        font-size: 22px;
+        padding: 6px;
+        min-width: 120px;
+        height: 60px;
+        font-weight: normal;
+    }
+        
+    .btn_popup{
+        text-align: center;
+        font-size: 22px;
+        padding: 6px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        min-width: 120px;
+        height: 100px;
+        font-weight: normal;
+    }
+    
+}
+
+@media only screen 
+and (min-device-width : 540px)
+and (max-device-width : 650px)
+{
+   .btn_keipro{
+        text-align: center;
+        font-size: 32px;
+        padding: 6px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        min-width: 160px;
+        height: 100px;
+        font-weight: normal;
+    }
+    
+    .btn_popup{
+        text-align: center;
+        font-size: 22px;
+        padding: 6px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        min-width: 120px;
+        height: 100px;
+        font-weight: normal;
+    }
+    
+    .btn_scpecial{
+        padding-top: 25px;
+        text-align: center;
+	font-size: 22px;
+        color: #fff !important;
+	border-radius: 10px;
+	margin: 0px 10px 10px 0px;
+	min-width: 160px;
+        height: 100px;
+        font-weight: normal;
+    }
+    
+}
+
+@media only screen 
+and (min-device-width : 540px)
+and (max-device-width : 650px)
+{
+    .btn_table{
+        text-align: center;
+	font-size: 22px;
+	padding: 3px;
+        color: #fff !important;
+	border-radius: 10px;
+	margin: 0px 10px 10px 0px;
+	min-width: 80px;
+	height: 90px;
+        font-weight: normal;
+    }
+    
+    .popup_button{
+        font-size: 24px;
+        padding: 6px;
+        min-width: 120px;
+        height: 70px;
+        font-weight: normal;
+    }
+}
+

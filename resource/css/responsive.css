@@ -1,0 +1,782 @@
+/* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+By:rajibnew12@gmail.com
+========================================================================== */
+/* ---------------------------------iPhone 6, 6S, 7 and 8   -----------
+----------------------------------------------------------------------*/
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+    body{}
+
+    .form-control {
+
+        font-size: 2.5rem;
+    }
+
+
+}
+
+
+
+/*----------------iPhone 6, 6S Portrait ----------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+
+    .container-fluid{
+        padding-left: 5px;
+        padding-right: 5px;
+     
+    }
+
+    .content_maindiv {
+        width: 70%;
+    }
+
+
+        /*.pull-right{
+
+            float: left !important;
+
+        }*/
+
+        .btn_keipro{
+
+            margin: 0px 4px 6px 0px;
+            font-size: 18px;
+        }
+
+        .btn-sub{
+        margin-left: 3rem;
+        }
+
+        .home_page_navi {
+            position: fixed;
+            right: 80px;
+            bottom: 30px;
+            padding: 10px;
+        }
+    .notification_aria {
+        position: fixed;
+        right: 80px;
+        bottom: 30px;
+        padding: 10px;
+    }
+
+    .word_btn_container{
+        height: 600px;
+        position: fixed;
+        overflow: scroll;
+    }
+
+
+}
+/*===---------------- iPhone 6, 6S Landscape -------------------=====*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    .container-fluid{
+
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .emailing{
+        margin: 0 !important;
+    }
+
+    .content_maindiv {
+        width: 80%;
+    }
+    
+    .btn-sub{
+        margin-left: 3rem;
+    }
+
+   .word_btn_container{
+        height: 480px;
+        width: 100%;
+        position: fixed;
+        overflow-x:scroll;
+        overflow: hidden;
+
+    }
+
+    .table_of_contantes .table-bordered>tbody>tr>td{
+            font-size: 16px;
+            
+            
+        }
+
+
+    .content_tale_rasponsive{
+        width: 76%;
+    }
+
+
+    .word_table_content_scroll_child{
+  
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+
+
+}
+
+
+
+
+/* -------------------------- iPhone 6+, 7+ and 8+ ---------------------------- */
+/* ===========Portrait and Landscape============= */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+/*-------------------------------- Portrait-------------------------------------- */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+/*============ Landscape==================== */
+
+
+@media only screen
+and (device-height: 414px)
+and (device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) {
+
+}
+
+
+
+
+/* ----------- Galaxy S3 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+
+
+    .container-fluid{
+        padding-left: 5px;
+        padding-right: 5px;
+     
+    }
+
+    .content_maindiv {
+        width: 70% !important;
+    }
+
+    /*.pull-right{
+        float: left !important;
+    }*/
+
+    .btn_keipro{
+        margin: 0px 4px 6px 0px;
+        font-size: 16px;
+    }
+
+        .btn-sub{
+            margin-left: 3rem;
+        }
+
+        .home_page_navi {
+            position: fixed;
+            right: 80px;
+            bottom: 30px;
+            padding: 10px;
+        }
+    .notification_aria {
+        position: fixed;
+        right: 80px;
+        bottom: 30px;
+        padding: 10px;
+    }
+
+    .word_btn_container{
+        height: 600px;
+        position: fixed;
+        overflow: scroll;
+    }
+
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+
+    .btn_keipro{
+        font-size: 18px;
+        padding: 6px;
+        margin: 0px 60px 6px 0px;
+        min-width: 160px;
+        height: 40px;
+        font-weight: normal;
+    }
+
+    .col-xs-10{
+        width: 70%;
+    }
+
+}
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+    .col-xs-10{
+        width: 70%;
+    }
+
+    .content_maindiv {
+     width: 70%;  
+    }
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+    .content_maindiv {
+     width: 70%;  
+    }
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+
+}
+
+/* ----------- Galaxy S6 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+
+
+    .col-xs-10{
+
+        width: 70% !important;
+    }
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: landscape) {
+
+}
+
+
+
+
+
+
+
+
+/*-------------------Response Desing Ahsan -------------------------------*/
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 640px) {
+
+    .col-xs-10{
+
+        width: 70% !important;
+    }
+
+
+    .btn_keipro{
+        text-align: center;
+        font-size: 15px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        font-weight: normal;
+    }
+
+    .word_btn_container2{
+
+        margin: 0 auto;
+    }
+
+
+
+    .btn_scpecial{
+    padding-top: 25px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff !important;
+    border-radius: 10px;
+    margin: 0px 10px 10px 0px;
+    min-width: 80px;
+    height: 90px;
+    font-weight: normal;
+    }
+
+    .btn_table{
+
+        text-align: center;
+        font-size: 18px;
+        padding: 0px 7px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 6px 0px;
+        height: 50px;
+        font-weight: normal;
+    }
+
+    
+
+    .table_of_contantes{
+    background-color: #FFF;
+    border: 2px solid #ababab;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    padding: 10px;
+    position: fixed;
+    bottom: 2px;
+    right: 20px;
+    height: 520px !important;
+    }
+
+    .popup_button{
+    font-size: 22px;
+    padding: 6px;
+    min-width: 120px;
+    height: 60px;
+    font-weight: normal;
+    }
+
+    .home_page_navi{
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+    padding: 4px;
+    font-weight: normal;
+    font-size: 22px;
+    }
+    .notification_aria{
+        position: fixed;
+        right: 50px;
+        bottom: 10px;
+        padding: 4px;
+        font-weight: normal;
+        font-size: 22px;
+    }
+    .table_of_contantes_title_aria{
+    display: none;
+    }
+
+    .btn_popup{
+
+    text-align: center;
+    font-size: 22px;
+    padding: 6px;
+    color: #fff !important;
+    border-radius: 10px;
+    margin: 0px 10px 10px 0px;
+    min-width: 120px;
+    height: 100px;
+    font-weight: normal;
+    }
+
+.word_table_content_scroll_prant{
+
+    height: 350px;
+    position: fixed;
+    overflow-x:hidden;
+    width: 625px;
+    overflow: hidden;
+}
+.word_table_content_scroll_child{
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+.table_of_contantes .table-bordered>tbody>tr>td{
+        font-size: 32px;
+    }
+
+
+.font_family_aria td{
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.font_size_aria table td{
+    font-size: 32px;
+    padding: 20px;
+    height: 90px;
+    width: 90px;
+}
+
+    .font_size_aria .table>tbody>tr>td{
+    padding: 30px;
+    }
+    .font_size_aria{
+    width: 50%;
+    }
+
+    .content_tale_rasponsive{
+    width: 1200px;
+    }
+    .font_size_table_parent{
+        height: 350px;
+        overflow-x:hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+}
+    .font_size_table_child{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+    .font_family_aria_parent{
+        height: 350px;
+        overflow-x:hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .font_family_aria_child{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+
+}
+
+
+
+@media only screen
+and (min-device-width : 540px)
+and (max-device-width : 650px){
+
+
+    .home_page_navi{
+        position: fixed;
+        right: 200px;
+        bottom: 10px;
+        padding: 4px;
+        font-size: 22px;
+}
+    .notification_aria{
+        position: fixed;
+        right: 200px;
+        bottom: 10px;
+        padding: 4px;
+        font-size: 22px;
+    }
+
+
+.btn_popup{
+    text-align: center;
+    font-size: 22px;
+    padding: 6px;
+    color: #fff !important;
+    border-radius: 10px;
+    margin: 0px 10px 10px 0px;
+    min-width: 120px;
+    height: 100px;
+    font-weight: normal;
+}
+
+.btn_scpecial{
+    padding-top: 25px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff !important;
+    border-radius: 10px;
+    margin: 0px 10px 10px 0px;
+    min-width: 160px;
+    height: 100px;
+    font-weight: normal;
+}
+
+.font_size_aria .table>tbody>tr>td{
+    padding: 30px;
+    font-size: 32px;
+}
+.font_size_aria{
+    width: 30%;
+}
+.font_size_table_parent{
+    height: 350px;
+    overflow-x:hidden;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.font_size_table_child{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    overflow-y: scroll;
+}
+.font_family_aria_parent{
+    height: 350px;
+    overflow-x:hidden;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.font_family_aria_child{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    overflow-y: scroll;
+}
+
+}
+@media only screen and (min-device-width : 540px) and (max-device-width : 650px)
+{
+.home_page_navi{
+position: fixed;
+right: 200px;
+bottom: 10px;
+padding: 4px;
+font-size: 22px;
+}
+    .notification_aria{
+        position: fixed;
+        right: 200px;
+        bottom: 10px;
+        padding: 4px;
+        font-size: 22px;
+    }
+.table_of_contantes_title_aria{
+display: none;
+}
+
+.btn_table{
+/*text-align: center;
+font-size: 22px;
+padding: 3px;
+color: #fff !important;
+border-radius: 10px;
+margin: 0px 10px 10px 0px;
+min-width: 80px;
+height: 90px;*/
+font-weight: normal;
+}
+
+.content_title td{
+font-size: 22px;
+}
+
+.table_of_contantes{
+    background-color: #FFF;
+    border:2px solid #ababab;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    /*margin: 10px;*/
+    padding: 10px;
+    position: fixed;
+    bottom: 2px;
+    right: 20px;
+    height: 600px !important;
+}
+.popup_button{
+    font-size: 24px;
+    padding: 6px;
+    min-width: 120px;
+    height: 70px;
+    font-weight: normal;
+}
+
+.btn_scpecial{
+    padding-top: 25px;
+    text-align: center;
+    font-size: 32px;
+    color: #fff !important;
+    border-radius: 10px;
+    margin: 0px 10px 10px 0px;
+    min-width: 160px;
+    height: 100px;
+    font-weight: normal;
+}
+
+.word_table_content_scroll_prant{
+    height: 400px;
+    position: fixed;
+    overflow-x:hidden;
+    padding: 0;
+    width: 1024px;
+    overflow: hidden;
+}
+.word_table_content_scroll_child{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.table_of_contantes .table-bordered>tbody>tr>td{
+    font-size: 35px;
+    padding: 30px 8px;
+}
+
+.table_of_contantes{
+
+    height: 550px !important;
+}
+
+
+.font_size_aria table td{
+    font-size: 32px;
+    height: 90px;
+    width: 90px;
+}
+
+.font_color_aria table td{
+    width: 100px;
+    height: 100px;
+}
+
+.font_color_aria{
+    width: 25%;
+}
+
+.font_size_aria .table>tbody>tr>td{
+    padding: 25px;
+}
+.font_size_aria{
+    width: 30%;
+}
+
+.font_family_aria{
+    font-size: 32px;
+}
+.font_family_aria {
+    width: 30%;
+}
+
+.font_family_aria .table>tbody>tr>td{
+    padding: 25px;
+}
+
+.content_tale_rasponsive{
+    width: 1530px;
+}
+.font_size_table_parent{
+    height: 350px;
+    overflow-x:hidden;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.font_size_table_child{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    overflow-y: scroll;
+}
+.font_family_aria_parent{
+    height: 350px;
+    overflow-x:hidden;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.font_family_aria_child{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+
+
+}
+
+
+@media only screen and (min-device-width : 651px) and (max-device-width : 900px){
+ 
+    /*.word_table_content_scroll_prant{
+        height: 400px;
+        position: fixed;
+        overflow-x:hidden;
+        padding: 0;
+        width: 1024px;
+        overflow: hidden;
+    }*/
+
+    
+}
+
+
+@media only screen and (max-width: 768px) 
+{
+    /*.word_btn_containers{
+        position: fixed;
+    }*/
+}

@@ -1,0 +1,1143 @@
+$(document).mouseup(function (e){
+                var hide_enter_outside = $(".point_details_table");
+                if (!hide_enter_outside.is(e.target) && hide_enter_outside.has(e.target).length === 0)
+                {
+                    hide_enter_outside.removeClass('d-block').addClass('d-none');            
+                }
+            });
+
+---------------------------------
+https://stackoverflow.com/questions/24673555/divide-html-into-pages-based-on-content-size
+-----------------------------------
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/jquery-ui.js"></script>
+
+
+<p><br data-mce-bogus="1"></p>
+<span id="_mce_caret" data-mce-bogus="1">?</span>
+<span id="_mce_caret" data-mce-bogus="true"><strong>?dv</strong><span id="_mce_caret" data-mce-bogus="1">?sdv</span></span>
+<br data-mce-bogus="1">&#65279;
+<span style="font-weight:normal;">farjana test&nbsp;</span>
+-------------------------------
+$("p:empty").remove();
+---------------------------
+canvas.getActiveObject().get('type');
+
+------------------------------
+backgroundColor.onchange = function() {         
+            canvas.getActiveObject().set("fill", this.value);
+            canvas.renderAll();
+        };
+----------------------------
+tinymce background color change:
+tinymce.activeEditor.contentDocument.body.style.backgroundColor = '#DDDDDF';
+$('textarea, input, select').change(function () {
+    $(this).css({ 'background': '#D6FFD6' });
+});
+
+tinymce.activeEditor.on('change', function(){
+    this.contentDocument.body.style.backgroundColor = '#D6FFD6';
+});
+---------------------------
+if (tinymce.activeEditor.selection.getNode().nodeName.toLowerCase() === "p")
+                    {
+                        $(tinymce.activeEditor.selection.getNode()).after("...");
+                    }
+                    else {
+                        // tinymce.activeEditor.insertContent("...");
+                    }
+
+------How to get current node name and html content-----------
+tinyMCE.activeEditor.selection.getNode().nodeName
+
+tinyMCE.activeEditor.selection.getNode().innerHTML
+--------------------------
+for (i=0; i < tinyMCE.editors.length; i++){
+    var content = tinyMCE.editors[i].getContent();
+    alert('Editor-Id(' + tinyMCE.editors[i].id + '):' + content);
+}
+------------------------------------
+https://forum.jquery.com/topic/element-left-top-positioning-in-javascript
+$('.outerDiv').scrollLeft(300);
+$('.outerDiv').scrollTop(50);
+
+
+var s="<div>hello world <br/><li>First LI</li><li>Second LI</li></div>";   
+s = s.replace(/<li>/g, "#");  
+s = s.replace(/<\/li>/g,"<br/>"); 
+alert(s);
+--------------------------
+// Get the HTML contents of the currently active editor
+console.debug(tinymce.activeEditor.getContent());
+
+// Get the raw contents of the currently active editor
+tinymce.activeEditor.getContent({format: 'raw'});// output with html
+tinymce.activeEditor.getContent({format: 'text'});// output without html
+
+// Get content of a specific editor:
+tinymce.get('content id').getContent()
+ //method2 getting the content by id of a particular textarea
+  alert(tinyMCE.get('myarea1').getContent());
+
+//DOM SELECT
+var tt=tinymce.activeEditor.dom.select('td#row1col1')[0];
+tinymce.activeEditor.dom.select('td.amount_a_col1');
+tinymce.activeEditor.dom.setHTML(tinymce.activeEditor.dom.select('td.subtotal_of_a'), 'some value');
+tinymce.activeEditor.selection.setContent('Some contents');
+http://archive.tinymce.com/wiki.php/API3:method.tinymce.dom.DOMUtils.setHTML
+--------------------
+https://stackoverflow.com/questions/4551834/how-to-get-the-content-of-a-tinymce-textarea-with-javascript
+http://archive.tinymce.com/wiki.php/TinyMCE3x:Command_identifiers
+https://stackoverflow.com/questions/14606068/how-to-replace-an-element-with-tinymce
+https://stackoverflow.com/questions/29036673/tinymce-how-to-insert-content-and-select-it
+https://stackoverflow.com/questions/37943976/tinymce-automatically-insert-additional-attributes-when-copying-pasting-conten
+------------------------------
+tinymce.activeEditor.dom.removeClass(tinymce.activeEditor.dom.select('p'), 'my_class');
+tinymce.activeEditor.dom.addClass(tinymce.activeEditor.dom.select('p'), 'my_class_pagebreak');
+
+                    tinymce.get('doc_content').execCommand('insertHTML', false, '<span style="font-weight:normal;">&nbsp;</span>');
+                    tinymce.activeEditor.execCommand('mceInsertContent', false, '<br>&nbsp;&nbsp;&nbsp;&nbsp;hi');
+                    var tt=tinymce.activeEditor.getContent();
+                    var tt1=tinymce.activeEditor.setContent();
+                    tinymce.activeEditor.insertContent('<p>!</p>');
+                    var marker = jQuery(tt.getBody()).find('.marker');
+                    alert(marker);
+                    tinymce.activeEditor.insertContent('<br/><!-- pagebreak -->');
+
+-------------------
+col-md-12 panel-body
+            tinymce.activeEditor.insertContent('<div style=" position: absolute;left:5%;top:8%">&nbsp;Add <br>Custom<br>Text&nbsp;</div><img  id="my" width="100" height="100" style=" " src="resource/img/rect.png" />');
+font_family
+
+--------tinymce onclick show node name------------
+http://jsfiddle.net/xgPzS/466/
+
+---------get image X Y position-----------------
+http://jsfiddle.net/JBCH4/3/
+
+https://stackoverflow.com/questions/15053219/tinymce-is-it-possible-to-get-caret-position-of-textarea-corresponding-to-wysi
+https://stackoverflow.com/questions/18105451/tinymce-4-get-caret-position
+https://stackoverflow.com/questions/8348302/how-to-get-the-current-block-position-in-tinymce
+https://stackoverflow.com/questions/15989066/jquery-tag-name-of-element
+https://stackoverflow.com/questions/1107220/how-can-i-select-an-element-by-name-with-jquery
+https://stackoverflow.com/questions/6541782/getting-the-value-from-a-tinymce-textarea
+https://stackoverflow.com/questions/4336374/to-add-id-and-name-for-image-inside-tinymce
+http://addtext.com/photo/index?bgUrl=http://images.addtext.com/images/gallery/baby-zebra-75885_720.jpg
+
+-----------Problem with draggable divs with editable functionality via tinymce----------------------
+https://community.tinymce.com/communityQuestion?id=90661000000MrXxAAK
+https://stackoverflow.com/questions/17536833/set-caret-after-creating-new-element-in-contenteditable-div
+
+---------------Fabric.js demos · Kitchensink---------------------------
+http://fabricjs.com/kitchensink
+https://www.htmlgoodies.com/html5/drawing-shapes-with-the-fabric.js-canvas-library.html
+https://stackoverflow.com/questions/21715812/how-to-upload-an-image-to-a-canvas-with-fabric-js
+------------- Fabric.js tests · IText tests ----------------------------
+http://fabricjs.com/test/misc/itext.html
+-----
+https://css-tricks.com/examples/ShapesOfCSS/
+https://jqueryui.com/resizable/
+https://www.tinymce.com/docs/api/tinymce.dom/tinymce.dom.domutils/
+https://stackoverflow.com/questions/17578395/reinitializing-tiny-mce-4-results-in-a-blank-editor
+https://stackoverflow.com/questions/41467172/how-to-style-input-on-tinymce
+https://stackoverflow.com/questions/17781251/how-to-insert-text-inline-of-text-inside-textarea-tinymce-using-jquery
+https://stackoverflow.com/questions/488189/how-to-set-the-initial-text-in-a-tinymce-textarea
+https://www.google.com/search?q=fabric+js+text+editor&sa=X&ved=0ahUKEwj2uPfUvPDZAhWHpI8KHcQ5DUcQ1QIIoQEoBg&biw=1366&bih=662
+
+-----------Add free drawing result on another canvas in fabricjs-----------------------
+http://jsfiddle.net/at3c0h31/22/
+------------onclick resize all images in tinymce---------------------------------
+http://jsfiddle.net/rqwVA/29/
+
+----------how to resize an image on “onClick” using jquery?----------------------------------
+http://jsfiddle.net/bzMmE/467/
+
+---------- color picker in html5 canvas -------------------------------
+https://www.webdesignerdepot.com/2013/03/how-to-create-a-color-picker-with-html5-canvas/
+
+----------- How to change svg color on Canvas - Fabricjs -------------------------
+https://jsfiddle.net/aLkkxghz/
+
+------------ Really Simple Color Picker in jQuery -----------------------------------
+http://www.laktek.com/2008/10/27/really-simple-color-picker-in-jquery/
+https://www.jqueryscript.net/demo/Hexagon-Color-Picker-Plugin-with-jQuery-jQuery-UI/
+https://www.jqueryscript.net/tags.php?/Colorpicker/
+http://laktek.github.io/really-simple-color-picker/demo.html
+
+--------vertical-text-in-ie7-ie8-ie9-and-ie10-with-css-only-----------------------------------------
+https://gist.github.com/aiboy/7406727
+http://scottgale.com/css-vertical-text/2010/03/01/
+https://stackoverflow.com/questions/17286651/vertical-text-in-ie7-ie8-ie9-and-ie10-with-css-only
+
+css:
+writing-mode:tb-rl;t-webkit-transform:rotate(90deg);t-moz-transform:rotate(90deg);t-o-transform: rotate(90deg);
+style="writing-mode: vertical-rl; text-orientation: upright;"
+------------------------------------------------
+https://jsfiddle.net/abhitalks/jwnnn5oy/
+-----------------------------------------------------
+
+
+
+ html = $.parseHTML(tinymce.activeEditor.getContent());
+
+
+                
+----------------------------------------
+
+$content = str_ireplace('<','&#x200B;<',$content);
+ ----------------------------------------------
+
+// Sets a style value on all paragraphs in the currently active editor
+tinyMCE.activeEditor.dom.setStyle(tinyMCE.activeEditor.dom.select('p'), 'background-color', 'red');
+
+// Sets a style value to an element by id in the current document
+tinyMCE.DOM.setStyle('mydiv', 'background-color', 'red');
+
+
+--------------------------------------------------------
+function onObjectSelected(e) {
+        console.log(e.target.get('type'));
+    }
+    canvas.on('object:selected', onObjectSelected);
+------------------------------------------------
+canvas.on('mouse:up', function (e) {
+        //check if user clicked an object
+        if (e.target) {
+            var obj = canvas.getActiveObject();
+            if (!obj) return;
+            var clone = obj.clone();
+            clone.set({
+                top: clone.get('top') + 150
+            });
+            canvas.add(clone);
+            //clicked on object
+            alert(obj);
+            var iTextSample = new fabric.IText('Please double click here \nto write something', {
+                left:50,
+                top:50,
+                fontFamily:'Arial',
+                fill:'#333',
+                lineHeight:1.1,
+                fontSize:12
+//            backgroundColor:'#ccc'
+            });
+            canvas.add(iTextSample);
+        }else{
+            //add rectangle
+            addrect(e.e.clientY, e.e.clientX, 100, 100, "#CCCCC");
+        }
+    });
+---------------------------------------
+<!--        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8 pull-right hide shapes_area" id="shapes_area" style="position: fixed; right: 0px; bottom: 0px; padding: 4px;">-->
+<!---->
+<!--            <div class="panel panel-info" style="margin-bottom: 2px; border: 2px solid #eee;">-->
+<!--                <div class="col-md-12" style="margin-top: 10px;">-->
+<!--                    <button type="button" id="close_shapes_area" class="btn btn-warning popup_button pull-right" id="close-app" title="??">??</button>-->
+<!--                    <div class="clearfix"></div>-->
+<!--                </div>-->
+<!--                <div class="col-md-12 panel-body">-->
+<!--                    <button class="btn btn-info btn_table" id="arrows_shape"> <i class="fa fa-long-arrow-right"></i> ?? </button>-->
+<!--                    <button class="btn btn-info btn_table" id="diamond_shape">  <!-- ?? --> ??? ?</button>-->
+<!--                    <button class="btn btn-info btn_table" id="rect_shape"> <i class="fas fa-square"></i> ?? </button>-->
+<!--                    <div class="clearfix"></div>-->
+<!--                </div>-->
+<!--                <div class="clearfix"></div>-->
+<!--            </div>-->
+<!--            <div class="clearfix"></div>-->
+<!--        </div>-->
+<!--        <div class="clearfix"></div>-->
+
+
+-------------How to detect Safari, Chrome, IE, Firefox and Opera browser?------------------
+<!DOCTYPE html>
+    <html>
+    <body>
+    <p>What is the name(s) of your browser?</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+
+    function myFunction() { 
+     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
+    {
+        alert('Opera');
+    }
+    else if(navigator.userAgent.indexOf("Chrome") != -1 )
+    {
+        alert('Chrome');
+    }
+    else if(navigator.userAgent.indexOf("Safari") != -1)
+    {
+        alert('Safari');
+    }
+    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+    {
+         alert('Firefox');
+    }
+    else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+    {
+      alert('IE'); 
+    }  
+    else 
+    {
+       alert('unknown');
+    }
+    }
+    </script>
+
+    </body>
+    </html>
+                            window.open(base_url+'index.php/wordapp/view_settlement_form/'+settlement_id, "New Window", "height=1100,width=1600, left=100, top=5, scrollbars=yes, resizable=1");
+
+------------------------------------------------------
+155
+btn-shapes-design
+uploads/1521524070.png
+uploads/1521524089.png
+event.preventDefault();
+object_resizing : false
+The image is indeed loaded, but if I try moving\scaling the image it disappears, and I get this error in console:
+
+Fabric.js - Moving image loaded from url receiving error: Cannot read property 'length' of undefined
+
+
+
+=======================================================
+<input id="text_color_piker" name="text_color_piker" type="text" placeholder="#000000"
+                                       class="form-control input-sm">
+
+
+<input id="back_color_piker" name="back_color_piker" type="text" placeholder="#000000"
+                                       class="form-control input-sm">
+
+<!-- Color Picker -->
+<link rel="stylesheet" media="screen" type="text/css" href="resource/colorpicker/css/colorpicker.css"/>
+<script type="text/javascript" src="resource/colorpicker/js/colorpicker.js"></script>
+<!-- color picker -->
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+
+        $('#text_color_piker').ColorPicker({
+            color: '#0000ff',
+            onShow: function (colpkr) {
+                $(colpkr).fadeIn(500);
+                return false;
+            },
+            onHide: function (colpkr) {
+                $(colpkr).fadeOut(500);
+                return false;
+            },
+            onChange: function (hsb, hex, rgb) {
+                $('#text_color_piker').val('#' + hex);
+                $('#text_color_piker').css('backgroundColor', '#' + hex);
+            }
+        });
+        $('#back_color_piker').ColorPicker({
+            color: '#f00855',
+            onShow: function (colpkr) {
+                $(colpkr).fadeIn(500);
+                return false;
+            },
+            onHide: function (colpkr) {
+                $(colpkr).fadeOut(500);
+                return false;
+            },
+            onChange: function (hsb, hex, rgb) {
+                $('#back_color_piker').val('#' + hex);
+                $('#back_color_piker').css('backgroundColor', '#' + hex);
+            }
+        });
+    })
+
+</script>
+
+extended_valid_elements: "svg[*],defs[*],pattern[*],desc[*],metadata[*],g[*],mask[*],path[*],line[*],marker[*],rect[*],circle[*],ellipse[*],polygon[*],polyline[*],linearGradient[*],radialGradient[*],stop[*],image[*],view[*],text[*],textPath[*],title[*],tspan[*],glyph[*],symbol[*],switch[*],use[*]"
+https://www.tinymce.com/docs/configure/content-filtering/#extended_valid_elements
+<button class="btn btn_table pink lighten-5" id="shape-table">?</button>
+
+-----------------------------------------------------
+
+$("#shape-table").click(function (event) {
+        event.preventDefault();
+        var svgData = '<svg xmlns="http://www.w3.org/2000/svg" ><foreignObject width="700" height="500"><div xmlns="http://www.w3.org/1999/xhtml" style=""> <table width="700" height="500" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#333" style="border:1px solid #333;">\n' +
+            '    <tr>\n' +
+            '        <td width="25%" height="25" bgcolor="#FFFFFF"> </td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '    </tr>\n' +
+            '    <tr>\n' +
+            '        <td width="25%" height="25" bgcolor="#FFFFFF"> </td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '    </tr>\n' +
+            '    <tr>\n' +
+            '        <td width="25%" height="25" bgcolor="#FFFFFF"> </td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '    </tr>\n' +
+            '    <tr>\n' +
+            '        <td width="25%" height="25" bgcolor="#FFFFFF"> </td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '    </tr>\n' +
+            '    <tr>\n' +
+            '        <td width="25%" height="25" bgcolor="#FFFFFF"> </td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '    </tr>\n' +
+            '    <tr>\n' +
+            '        <td width="25%" height="25" bgcolor="#FFFFFF"> </td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '    </tr>\n' +
+            '    <tr>\n' +
+            '        <td width="25%" height="25" bgcolor="#FFFFFF"> </td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '        <td width="25%" bgcolor="#FFFFFF"></td>\n' +
+            '    </tr>\n' +
+            '\n' +
+            '\n' +
+            '</table></div></foreignObject></svg>';
+
+        var base_url = $("#base_url").val();
+        var url = base_url + 'uploads';
+
+        var DOMURL = window.URL || window.webkitURL || window;
+        var img = new Image();
+        var svg = new Blob([svgData], {type: 'image/svg+xml'});
+        var url = DOMURL.createObjectURL(svg);
+        img.src = url;
+        var imgInstance = new fabric.Image(img, {
+            left: 50,
+            top: 50,
+            width: 600,
+            height: 400,
+            backgroundColor:'#fff'
+        });
+        canvas.add(imgInstance);
+        canvas.renderAll();
+        var img = canvas.toSVG();
+        tinymce.execCommand('mceInsertContent', false, img);
+
+        // var img1 = img.toDataURL('png');
+        console.log(img);
+
+    });
+----------------------
+col 9
+row 40
+Macromedia Dreamweaver 8 Serial Key== WPD800-56436-43532-24092
+
+<input style="border:none !important; outline:none !important;" type="text" id="row1_col1" name="amount_a_col1">
+
+
+---------------------------------------------
+
+'<table class="custom_table" width="100%" height="100%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#333" style="border:1px solid #333;">\n' +
+            '  <tr>\n' +
+            '    <td width="9%" height="25" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="13%" align="center" bgcolor="#FFFF00">??</td>\n' +
+            '    <td width="10%" align="center" bgcolor="#99FF99">1</td>\n' +
+            '    <td width="10%" align="center" bgcolor="#99FF99">2</td>\n' +
+            '    <td width="10%" align="center" bgcolor="#99FF99">3</td>\n' +
+            '    <td width="10%" align="center" bgcolor="#99FF99">4</td>\n' +
+            '    <td width="10%" align="center" bgcolor="#99FF99">5</td>\n' +
+            '    <td width="10%" align="center" bgcolor="#99FF99">6</td>\n' +
+            '    <td width="16%" align="center" bgcolor="#99FF99">??</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="9%" rowspan="9" align="center" valign="middle" bgcolor="#FFFF00">(a)<br>\n' +
+            '    ?<br> \n' +
+            '    ?<br> (<br>?<br> ?<br>)</td>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF" id="amount_a_col1"></td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF" id="colNum2">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF" id="colNum2">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF" id="colNum2">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF" id="colNum2">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF" id="colNum2">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF" id="amount_a_col1">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF" class="colNum">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF" class="colNum">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF" class="colNum">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF" class="colNum">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF" class="colNum">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF" class="colNum">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF" class="colNum">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF" class="colNum">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF" class="colNum">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF" class="colNum">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF" class="colNum">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#FFFF00">?? a?</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="9%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="13%" bgcolor="#FFFF00">??  b</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="9%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="13%" bgcolor="#FFFF00">?? a-b=c</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="9%" rowspan="24" align="center" bgcolor="#FFFF00">(d)<br> ?<br> ?<br> (<br>?<br>?<br>)</td>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#FFFF00">?? d?</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#FFFF00">?? c-d=e</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="9%" rowspan="3" align="center" bgcolor="#FFFF00">?<br>\n' +
+            '    ?<br>?</td>\n' +
+            '    <td width="13%" height="25" bgcolor="#FFFF00">?? f?</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#FFFF00">?? g?</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="13%" height="25" bgcolor="#FFFF00">?? f-g=h</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '  <tr>\n' +
+            '    <td width="9%" height="25" bgcolor="#99FF99">&nbsp;</td>\n' +
+            '    <td width="13%" bgcolor="#FFFF00">?? e-h</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="11%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '    <td width="16%" bgcolor="#FFFFFF">&nbsp;</td>\n' +
+            '  </tr>\n' +
+            '</table>\n'
+
+
+-------------------------------------
+if (arr_test == 'NaN') {
+                // alert(arr_test);
+                // arr_test = arr_test.innerHTML.replace('NaN', 'test');
+                tinymce.activeEditor.dom.setHTML(tinymce.activeEditor.dom.select('td#subtotal_of_a'), 0);
+
+            } else {
+                tinymce.activeEditor.dom.setHTML(tinymce.activeEditor.dom.select('td#subtotal_of_a'), tot);
+            }
+
+
+------------------------------
+	// comma input
+	$(document).on("keyup","input.comma", function(){
+	  // skip for arrow keys
+	  if(event.which >= 37 && event.which <= 40) return;
+	  // format number
+	  $(this).val(function(index, value) {
+		return value
+		.replace(/\D/g, "")
+		.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+		;
+	  });
+	});
+
+---------------
+<br data-mce-bogus="1" />table plugin.js
+save_autometically; custom editor4.js
+----------------------
+A4 at 72dpi: 595 pixels x 842 pixels
+A4 at 300dpi: 2480 pixels x 3508 pixels
+A4 at 600dpi: 4960 pixels x 7016 pixels
+
+Word defaults to line space height of 10, 
+but changing the line space height to 12, an A4 size Word document 
+with text in the Arial font (font size 12, not bold) holds 3750 characters.
+
+For those who need a general rule of thumb, a typical page which 
+has 1-inch margins and is typed in 12 point font with standard 
+spacing elements will be approximately 500/679 words when typed single spaced. 
+For assignments that require double spacing, it would take approximately 
+250 words to fill the page.
+------------------------------------
+
+
+        .pink.lighten-5 {
+            background-color: #F2DCDB !important;
+        }
+I can change background color via  
+.mce-content-body
+
+
+event.ctrlKey && event.keyCode==86
+
+var Styles = new tinymce.html.Styles({
+   url_converter: function(url) {
+      return url;
+   }
+});
+
+styles = Styles.parse('border: 1px solid red');
+styles.color = 'red';
+
+console.log(new tinymce.html.StyleSerializer().serialize(styles));
+$(tinyMCE.activeEditor.getContainer()).height()
+
+
+---------------------
+
+@media print
+{
+      .page-break  { display:block; page-break-before:always; }
+
+}
+and then cite this in your HTML where you want the page to break:
+
+<div class="page-break"></div>    
+var textArray = result.replace(/(<([^>]+)>)/ig,"");
+var textArray = result.split(/ +(?=[\w]+\:)/g);
+var textArray = result.split(" ").join("/");
+var result="a:0 b:1 moo:\"foo bar\" c:2";     
+----------------------------------
+<script>
+
+    var x="Lorem ipsum dolor sit amet, consectetuer adipiscing elit".split(" ").map(function (word) {
+        return '<span class="word">' +word +'</span>';
+    }).join(" ");
+
+    document.getElementById('htmlForm').innerHTML=x;
+
+
+</script>
+
+<p id="htmlForm"></p>  
+===================================================
+                                        
+https://fabrilife.com/design
+--------------------------------------------
+php credit card payment tutorial:
+https://www.formget.com/paypal-credit-card-payment/
+------------------
+
+location.reload();
+
+padding-top:176px;width:100%; height:728px !important;overflow-y:scroll
+tinymce.get('doc_content').getBody().focus();
+
+
+
+
+
+https://convertio.co/audio-converter/
+
+
+emailing_aria_button
+http://www.hakusyu.com/webmtm/
+add_seal_image_password
+configuration_seal_image
+----------------
+echo "<pre>";
+        print_r($data['new_email_check_for_user']);
+        exit();
+-----------------------
+
+
+---------------
+
+var from_button = $(this).attr('from_button');
+-----------
+
+var file_data1 = document.getElementById('add_seal_image').files[0];
+            var form_data1 = new FormData();
+            form_data1.append('userfile', file_data1);
+            form_data1.append("add_password", add_password);
+            form_data1.append("seal_image_type", seal_image_type);
+
+.checked {
+    background-color: #DDDDDF;
+}
+
+--------------------------------------
+
+
+
+$("#add_email_partner_message_confirm").show();
+          
+$("#close_pertner").trigger('click');
+setTimeout(function () {
+check_if_password_exist();
+}, 1000);
+
+invalid_partner_error_message
+
+var data = JSON.parse(data);
+
+if (data.message == 'success') {
+                        get_user_partners();
+                    }
+
+---------------------------------------
+DROP TABLE a3m_acl_role;
+DROP TABLE a3m_rel_account_permission;
+DROP TABLE a3m_rel_account_role;
+DROP TABLE a3m_rel_role_permission;
+DROP TABLE ci_sessions;
+DROP TABLE drafts;
+DROP TABLE email;
+DROP TABLE email_attachment;
+DROP TABLE email_deleted;
+DROP TABLE email_partner;
+DROP TABLE files;
+DROP TABLE group_mes;
+DROP TABLE introducer_referee;
+DROP TABLE login;
+DROP TABLE mail;
+DROP TABLE post;
+DROP TABLE settlement_form_tbl;
+DROP TABLE settlement_seal_img;
+DROP TABLE users;
+DROP TABLE word;
+
+---------------------
+ALTER TABLE `settlement_form_tbl` ADD `is_share` INT(2) NOT NULL DEFAULT '0' COMMENT '0 for not share in email; 1 for share in email' AFTER `is_deleted`;
+
+
+
+
+
+
+---------------------japan language---------------------------
+table=eskuye
+chair=esu
+AC=aircon
+mobile=ketai/demoa
+PC(laptop)=pasocon
+bottle=bin
+shoes=kutsu
+fan=sampuki
+here=kore
+there=sore
+far=ore
+remote=remutu
+key=kagi
+door=dua
+bag=kaban
+near=konohitu
+oi bakti=sonohitu
+apni=anuhito
+who=da-re
+apni=anata
+nothing=muda
+not good=da-me-des
+excuse me=suimasen
+man=otuku
+woman=onna
+and=to
+student=gaksei
+school=gakko
+teacher/professor=sensei
+amio=mo
+mad=kichigai
+sunglass=mega-ne
+watch=toke
+tissue=chirigummy
+handkerchief
+mirror=kagami
+newspaper=jasshi
+book=hon
+notebook/khata=notu
+taka=okane
+nai=yee, arimasen
+ase=hi, arimas
+question=shichomon
+ase ki=arimaska?
+problem ase?=mondai arimaska?
+he=kano
+she=kanoja
+echo 'Query1  =  '.$this->db->last_query();
+
+                 
+                            
+
+
+
+
+ function get_shared_setelment($sheard_id = NULL){
+        $this->db->distinct("settlement_form_tbl.settlement_id, settlement_form_tbl.settlement_title");
+        $this->db->select("settlement_form_tbl.settlement_id, settlement_form_tbl.settlement_title");
+        $this->db->from("email");
+        $this->db->join("settlement_form_tbl", "email.settlement_id = settlement_form_tbl.settlement_id");
+        $this->db->where(array("receiver_id" => $sheard_id));
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+
+
+function get_total_user_settlement_data($user_id, $view_type, $is_share, $created_by)
+    {
+        $this->db->select("settlement_id, settlement_title");
+        $this->db->where(array("settlement_form_tbl.created_by" => $user_id, "settlement_form_tbl.president_seal_id" =>0));
+        $query = $this->db->get("settlement_form_tbl");
+        return $query->result();
+//        if ($is_share == 0) {
+//
+//        }else{
+//            if ($view_type == 4) {
+////                $this->db->distinct("
+////                settlement_form_tbl.settlement_id,
+////                email.receiver_id,
+////                email.settlement_id");
+//                $this->db->select("settlement_id, settlement_title");
+//                $this->db->where(array("settlement_form_tbl.created_by" => $user_id, "settlement_form_tbl.president_seal_id" =>0));
+//                $query = $this->db->get("settlement_form_tbl");
+//                return $query->result();
+//            } else {
+//                $this->db->select("settlement_id, settlement_title");
+//                $this->db->where(array("settlement_form_tbl.created_by" => $user_id, "settlement_form_tbl.president_seal_id" =>0));
+//                $query = $this->db->get("settlement_form_tbl");
+//                return $query->result();
+//            }
+//        }
+    }

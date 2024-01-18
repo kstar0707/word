@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f8600646-3b69-4ebf-be50-e0dc6664fdeb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/wordapp.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/wordapp.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="Git Scope" pattern="" />
+  </component>
+  <component name="ProjectId" id="1lUhHD8S9YdEohgjf9gd5zxe2TV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8600646-3b69-4ebf-be50-e0dc6664fdeb" name="Default" comment="" />
+      <created>1520396996470</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520396996470</updated>
+      <workItem from="1520396998238" duration="3400000" />
+      <workItem from="1520479681082" duration="23648000" />
+      <workItem from="1520566955631" duration="40017000" />
+      <workItem from="1521087806300" duration="61974000" />
+      <workItem from="1521603467299" duration="1600000" />
+      <workItem from="1521605445492" duration="135341000" />
+      <workItem from="1522641003522" duration="95307000" />
+      <workItem from="1523000854047" duration="275260000" />
+      <workItem from="1524548992554" duration="263868000" />
+      <workItem from="1526966773242" duration="7434000" />
+      <workItem from="1526980944117" duration="226029000" />
+      <workItem from="1528434707189" duration="83752000" />
+      <workItem from="1529552933225" duration="40908000" />
+      <workItem from="1529901799053" duration="267561000" />
+      <workItem from="1531455314640" duration="448572000" />
+      <workItem from="1534476715426" duration="33116000" />
+      <workItem from="1535426561446" duration="68693000" />
+      <workItem from="1536206496979" duration="119894000" />
+      <workItem from="1536896216432" duration="327010000" />
+      <workItem from="1539316721211" duration="1717000" />
+      <workItem from="1539320093754" duration="22912000" />
+      <workItem from="1539751027886" duration="209630000" />
+      <workItem from="1542198981765" duration="18833000" />
+      <workItem from="1542344132615" duration="2506000" />
+      <workItem from="1542608211845" duration="14013000" />
+      <workItem from="1542883389659" duration="32698000" />
+      <workItem from="1543315865734" duration="38789000" />
+      <workItem from="1543815042916" duration="98427000" />
+      <workItem from="1545058490785" duration="37722000" />
+      <workItem from="1545413810349" duration="77169000" />
+      <workItem from="1546858728215" duration="3985000" />
+      <workItem from="1546865469435" duration="18781000" />
+      <workItem from="1547097726406" duration="85608000" />
+      <workItem from="1548052969054" duration="9991000" />
+      <workItem from="1548082632530" duration="3452000" />
+      <workItem from="1560223194797" duration="5696000" />
+      <workItem from="1560830206480" duration="18087000" />
+      <workItem from="1560916876237" duration="11000000" />
+      <workItem from="1561001750624" duration="4971000" />
+      <workItem from="1561087918783" duration="12651000" />
+      <workItem from="1561117477014" duration="848000" />
+      <workItem from="1561347005308" duration="187000" />
+      <workItem from="1561348436539" duration="16551000" />
+      <workItem from="1561436180166" duration="3831000" />
+      <workItem from="1607657496416" duration="375000" />
+      <workItem from="1608001338995" duration="147000" />
+      <workItem from="1608001837271" duration="3028000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

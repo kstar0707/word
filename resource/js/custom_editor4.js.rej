@@ -1,0 +1,84 @@
+diff a/resource/js/custom_editor4.js b/resource/js/custom_editor4.js	(rejected hunks)
+@@ -105,50 +105,42 @@
+             $(".close_aria").addClass('hide').removeClass('show');
+             $("#table_of_contantes").addClass('hide').removeClass('show');
+         });
++        editor.on('keydown', function(event) {
++            // event.preventDefault();
++            var editor_height = $('.editor_container').css("height");
++            // alert(editor_height);
++            var editor_height_no = editor_height.match(/\d+/);
++            var page_number = Math.round(editor_height_no[0]/835);
++            // var page = editor_height_no/1200;
++            var nubmer_of_pages = $("#number_of_page").val();
++            
++//            if (page_number>nubmer_of_pages) {
++//                tinyMCE.execCommand("mcePageBreak");
++//                $("#number_of_page").val(page_number);                
++//            }
++            console.log(page_number);
++        });
++
++        editor.on('change keyup paste', function (event) {
++            var event_mapping = $("#event_mapping").val();
++            console.log("Event Mapping No.: "+event_mapping);
++            if (event_mapping ==1) {
++                $("#event_mapping").val(2);
++                save_autometically();
++            }  
++        });
+         
+         editor.on('keydown', function (e){
+-//            e.preventDefault();
+-            var keyKode = e.keyCode;
+-            if (keyKode==13) {
+-                var event_mapping = $("#event_mapping").val();
+-                console.log("Event Mapping No.: "+event_mapping);
+-                if (event_mapping ==1) {
+-                    $("#event_mapping").val(2);
+-                    save_autometically();
+-                }
+-            }           
++            
++            var keyCode = e.keyCode;
++            if (keyCode==121) {
++                tinymce.get('doc_content').execCommand('mceInsertContent', false, '<span class="style_editor_default" style="font-weight:normal !important; font-size: 18px !important; font-family: ms mincho, ｍｓ 明朝 !important; color: #000;">&nbsp;</span>');
++//                tinymce.get("doc_content").execCommand('mceInsertContent', false, 'your content');
++                return false;
++               // return false;
++                }           
+         });
+ 
+-
+-        // Enter prevent function
+-        // editor.focus();
+-        // editor.on('keydown', function(event) {
+-        //     onKeyEvent(event);
+-        // });
+-        // var enterNo = 0;
+-        // function onKeyEvent(evt){
+-        //     var keyCode = evt.keyCode;
+-        //     if ( keyCode == 13 ){
+-        //         tinyMCE.execCommand('RemoveFormat');
+-        //         enterNo++;
+-        //         if(enterNo==1) {
+-        //             // $("#doc_content").remove();
+-        //             if (typeof tinyMCE != 'undefined') {
+-        //                 // Delete all formating by textaria ID
+-        //                 // tinyMCE.DOM.remove('doc_content');
+-        //                 tinyMCE.execCommand('RemoveFormat');
+-        //                 evt.preventDefault();
+-        //             }
+-                    
+-                    
+-        //         }else{
+-        //             // alert("Press Enter 2 time");
+-        //             setTimeout(init,10);
+-        //             enterNo = 0;
+-        //         }                        
+-        //     }                    
+-        // }
+-
+         // Content Undo
+         $("#undo").on('click', function (e) {
+             tinyMCE.execCommand('Undo');

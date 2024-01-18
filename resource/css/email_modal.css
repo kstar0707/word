@@ -1,0 +1,35 @@
+
+.center {
+    margin-top:20px;   
+}
+
+.modal-header {
+	padding-bottom: 5px;
+}
+
+.modal-footer .btn-group:last-child > button {
+	border-right: 0;
+}
+
+
+.modal-content{
+    border-radius: 2px;
+}
+
+.jaacos_modal{
+	margin-top: 0px;
+	/*padding-top: 10px;*/
+   width: 100%;     
+   background-color: #fff;  
+}
+
+#largeModal{ 
+    background-color: #fff;
+}
+
+
+.modal-backdrop {
+    background-color: #fff;
+   
+   
+}

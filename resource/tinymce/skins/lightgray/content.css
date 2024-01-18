@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'ms mincho, ｍｓ 明朝';
+  src: url('fonts/MS-Mincho.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'ms gothic, ｍｓ ゴシック';
+  src: url('fonts/MS-Gothic.ttf')  format('truetype');
+}
+
+body{
+	font-family:  "MS Mincho", "ＭＳ 明朝";
+	font-size: 18.666667px;
+	color: rgb(51, 51, 51) !important;
+        /*box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);*/
+}
+img{
+    margin: 5px 10px; 
+    float: left; 
+    overflow: hidden !important;
+}
+.style_editor_default{
+	font-family: "MS Mincho", "ＭＳ 明朝" !important;
+	font-size: 18.666667px !important;
+	font-weight: normal !important;
+	color: rgb(51, 51, 51) !important;
+}
+
+.my_class{
+    ime-mode:active;
+    /*width: 21cm;*/
+    font-family: ms mincho, ｍｓ 明朝;
+    font-size: 18.666667px;
+    margin-bottom: 0px;
+    border: none;
+    margin-left:15px;
+    /*margin-right: 30px !important;*/
+    margin-top: 8px;
+    word-wrap: break-word;
+    /*padding-top: 15px !important;*/
+
+    /*border:1px solid #000;*/
+    /*width:710px;*/
+
+    /*margin: 0 10px !important;
+    margin-right: 30px !important;
+    padding: 90px !important;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);*/
+}
+
+.my_class p, .email_editor p{
+    /*margin-top: 0.7em !important;*/
+    margin: -4px 0em 0.1em 0em;
+    text-indent: 20px;
+}
+
+
+.email_editor{
+  ime-mode:active;
+  padding:10px 10px !important;
+  font-family: ms mincho, ｍｓ 明朝;
+  font-size: 18.666667px;
+  margin: 0 !important;
+  border: none !important;
+}
+
+::-moz-selection {
+    background: #FCFF66;
+}
+::selection {
+    background: #FCFF66;
+}
+
+.mce-pagebreak{
+    /*overflow: hidden;*/
+    /*cursor: default;*/
+    /*display: block;*/
+    /*border: 1px solid #DDDDDF;*/
+    max-width: 99%;
+    /*width: 21cm;*/
+    /*position: absolute !important;*/
+    /* border: 1px solid #666; */
+/*    margin-top: 57px;*/
+    margin-bottom: 2px;
+    margin-top: 7px;
+    /*page-break-before: always;*/
+    /*height: 12px;*/
+    /*background: #DDDDDF;*/
+    /*margin: 50px 0 70px 0;*/
+}
+.mce-panel {
+    border: 0 solid #CCCCCC !important;
+     border: #CCCCCC !important;
+     background-color: #CCCCCC !important;
+}
+.ime_on{
+    ime-mode: active;
+    word-wrap: break-word;
+}
+.ime_off{
+    ime-mode: inactive;
+    word-wrap: break-word;
+}
+.amount_a_col1, .amount_a_col2, .amount_a_col3, .amount_a_col4, .amount_a_col5, .amount_a_col6, .subtotal_of_a, .subtotal_of_a_col2, .subtotal_of_a_col3, .subtotal_of_a_col4, .subtotal_of_a_col5, .subtotal_of_a_col6, .subtotal_of_b, .subtotal_of_b_col2, .subtotal_of_b_col3, .subtotal_of_b_col4, .subtotal_of_b_col5, .subtotal_of_b_col6, .subtotal_of_c, .subtotal_of_c_col2, .subtotal_of_c_col3, .subtotal_of_c_col4, .subtotal_of_c_col5, .subtotal_of_c_col6, .amount_d_col1, .amount_d_col2, .amount_d_col3, .amount_d_col4, .amount_d_col5, .amount_d_col6, .subtotal_of_d_col1, .subtotal_of_d_col2, .subtotal_of_d_col3, .subtotal_of_d_col4, .subtotal_of_d_col5, .subtotal_of_d_col6, .subtraction_of_d_col1, .subtraction_of_d_col2, .subtraction_of_d_col3, .subtraction_of_d_col4, .subtraction_of_d_col5, .subtraction_of_d_col6, .income_of_d_col1, .income_of_d_col2, .income_of_d_col3, .income_of_d_col4, .income_of_d_col5, .income_of_d_col6, .expenditure_of_d_col1, .expenditure_of_d_col2, .expenditure_of_d_col3, .expenditure_of_d_col4, .expenditure_of_d_col5, .expenditure_of_d_col6, .subtractionE_of_d_col1, .subtractionE_of_d_col2, .subtractionE_of_d_col3, .subtractionE_of_d_col4, .subtractionE_of_d_col5, .subtractionE_of_d_col6, .total_of_d_col1, .total_of_d_col2, .total_of_d_col3, .total_of_d_col4, .total_of_d_col5, .total_of_d_col6{
+    ime-mode: inactive;
+}
+
+
+#paginatedText{
+    width: 99%;
+    height: auto;
+    /*word-wrap: break-word;*/
+}
+
+.page{
+    padding: 0;
+    width: 650px;
+    max-height: 842px;
+    word-wrap: break-word;
+}
+
+#paginate{width:500px;height:500px;}
+/*#paginate img{width:150px;}*/
+.part{
+    border:1px solid #414141;margin-bottom:10px;
+}
+.my_class li.blocklist {
+    display: block;
+    border: 2px solid;
+    margin-bottom: 44px;
+}
+
+/*.custom_table{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-color: #333;*/
+    /*border-spacing: 1px;*/
+    /*border-collapse: separate;*/
+    /*border: 1px solid #333;*/
+/*}*/
+/*.custom_table td {*/
+    /*width: 25%;*/
+    /*height: 25px;*/
+    /*background-color: #ffffff;*/
+/*}*/
+
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+@media screen and (device-width: 375px)
+and (device-height: 667px)
+and (orientation: portrait) {
+
+
+    .my_class{
+
+        padding-top: 4px !important;
+
+    }
+
+}
+
+@media screen and (device-width: 414px)
+and (device-height: 736px)
+and (orientation: portrait) {
+
+
+    .my_class{
+
+        padding-top: 10px !important;
+
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .mce-btn-has-text{
+        left: 10px;
+    }
+}

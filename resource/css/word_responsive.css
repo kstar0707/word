@@ -1,0 +1,1590 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+/* 
+    Created on : Jan 4, 2018, 12:27:13 AM
+    Author     : AHSAN
+*/
+
+
+
+@media only screen and (min-device-width: 320px) and (device-width: 540px) {
+
+    .mobile_width {
+        padding-left: 0px;
+    }
+    /*.btn_keipro {
+        text-align: center;
+        font-size: 18px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        height: 50px;
+        font-weight: normal;
+    }*/
+
+    .btn_scpecial {
+        text-align: center;
+        font-size: 18px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        height: 50px;
+        font-weight: normal;
+    }
+
+    .btn_table {
+        text-align: center;
+        font-size: 18px;
+        padding: 3px 15px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        min-width: 80px;
+        height: 50px;
+        font-weight: normal;
+    }
+
+    .word_btn_container {
+        height: 350px;
+        position: fixed;
+        overflow-x: hidden;
+        /*overflow: hidden;*/
+    }
+
+    .table_of_contantes {
+        background-color: #FFF;
+        border: 2px solid #ababab;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        /*margin: 10px;*/
+        padding: 10px;
+        position: fixed;
+        bottom: 2px;
+        right: 20px;
+        height: 550px !important;
+    }
+
+    .popup_button {
+        font-size: 18px;
+        padding: 6px;
+        min-width: 80px;
+        height: 50px;
+        font-weight: normal;
+    }
+
+    /*.home_page_navi {
+        position: fixed;
+        right: 50px;
+        bottom: 10px;
+        padding: 4px;
+        font-weight: normal;
+        font-size: 16px;
+    }*/
+    .notification_aria {
+        position: fixed;
+        right: 50px;
+        bottom: 10px;
+        padding: 4px;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    .table_of_contantes_title_aria {
+        display: none;
+    }
+
+    .btn_popup {
+        text-align: center;
+        font-size: 18px;
+        padding: 6px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        min-width: 8px;
+        height: 5px;
+        font-weight: normal;
+    }
+
+    .word_table_content_scroll_prant {
+        height: 310px;
+        position: fixed;
+        overflow-x: hidden;
+        width: 300px;
+        overflow: hidden;
+    }
+
+    .word_table_content_scroll_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+    .table_of_contantes .table-bordered > tbody > tr > td {
+        font-size: 18px;
+        /*padding: 30px 8px;*/
+    }
+
+
+    .font_family_aria td {
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .font_size_aria table td {
+        font-size: 18px;
+    }
+
+    .font_size_aria .table > tbody > tr > td {
+        /*padding: 30px;*/
+    }
+
+    .content_tale_rasponsive {
+        width: 880px;
+    }
+
+    .font_size_table_parent {
+        height: 350px;
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .font_size_table_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+    .font_family_aria_parent {
+        height: 220px;
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .font_family_aria_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+    /*.word_image_selection_message {
+        position: fixed;
+        width: 300px;
+        right: 50px;
+        bottom: 5px;
+        padding: 4px;
+    }*/
+
+
+
+}
+
+/*---------------------------S3 LandScape size 640*360------------- --------------*/
+
+@media only screen and (min-device-width: 540px) and (max-device-width: 650px) {
+
+    /*.home_page_navi {
+        position: fixed;
+        right: 100px;
+        bottom: 10px;
+        padding: 4px;
+        font-size: 18px;
+        width: 400px;
+    }*/
+    .notification_aria {
+        position: fixed;
+        right: 100px;
+        bottom: 10px;
+        padding: 4px;
+        font-size: 18px;
+        width: 400px;
+    }
+    .table_of_contantes_title_aria {
+        display: none;
+    }
+    .btn_keipro {
+        text-align: center;
+        font-size: 18px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        height: 45px;
+        font-weight: normal;
+    }
+
+    .btn_table {
+        text-align: center;
+        font-size: 18px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        min-width: 80px;
+        height: 50px;
+        font-weight: normal;
+    }
+
+    .content_title td {
+        font-size: 22px;
+    }
+
+    .table_of_contantes {
+        background-color: #FFF;
+        border: 2px solid #ababab;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        padding: 10px;
+        position: fixed;
+        bottom: 2px;
+        right: 20px;
+        height: 600px !important;
+    }
+    .popup_button {
+        font-size: 18px;
+        padding: 6px;
+        min-width: 80px;
+        height: 50px;
+        font-weight: normal;
+    }
+
+
+    .word_table_content_scroll_prant {
+        height: 200px;
+        position: fixed;
+        overflow-x: hidden;
+        width: 550px;
+        overflow: hidden;
+    }
+
+    .word_table_content_scroll_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+
+    .table_of_contantes .table-bordered > tbody > tr > td {
+        font-size: 18px;
+    }
+
+    .table_of_contantes {
+        height: 340px !important;
+    }
+
+
+    /*.font_size_aria table td{
+        font-size: 32px;
+        height: 90px;
+        width: 90px;
+    }*/
+    .font_color_aria table td {
+        width: 100px;
+        height: 50px;
+    }
+
+    .font_color_aria {
+        width: 25%;
+    }
+
+    .font_size_aria .table > tbody > tr > td {
+        /*padding: 25px;*/
+    }
+    .font_size_aria {
+        width: 30%;
+    }
+
+    .font_family_aria {
+        font-size: 18px;
+    }
+    .font_family_aria {
+        width: 30%;
+    }
+
+    .font_family_aria .table > tbody > tr > td {
+        /*padding: 25px;*/
+    }
+
+    .content_tale_rasponsive {
+        width: 885px;
+    }
+
+    .font_size_table_parent {
+        height: 350px;
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .font_size_table_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+    .font_family_aria_parent {
+        height: 220px;
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .font_family_aria_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+    .word_btn_container {
+        height: 350px;
+        position: fixed;
+        overflow-x: hidden;
+        /*overflow: hidden;*/
+    }
+
+    /*.word_image_selection_message {
+        position: fixed;
+        right: 100px;
+        bottom: 5px;
+        padding: 4px;
+    }*/
+
+    .btn_scpecial {
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        height: 50px;
+        font-weight: normal;
+    }
+}
+
+
+
+@media only screen and (min-device-width: 651px) and (max-device-width: 900px) {
+    .word_table_content_scroll_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+
+    .table_of_contantes .table-bordered > tbody > tr > td {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .word_btn_container {
+        height: 300px;
+        position: fixed;
+        overflow-x: hidden;
+        /*overflow: hidden;*/
+    }
+
+    .btn_keipro {
+        text-align: center;
+        font-size: 18px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        height: 50px;
+        font-weight: normal;
+    }
+
+    /*.table_of_contantes{
+        width: 320px;
+    }*/
+}
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Sizing by Rajib Portrait and Landscape */
+
+/*----------Android Portrait --------------*/
+
+@media screen and (max-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+
+
+    .mobile_width {
+        width: 100%;
+        padding-left: 5px;
+    }
+
+    /*.flex-container {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        -ms-flex-pack: start;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -ms-flex-line-pack: justify;
+        align-content: space-between;
+        -ms-flex-align: start;
+        -webkit-box-align: start;
+        align-items: flex-start;
+    }*/
+
+    /*.word_btn_containers {
+        width: 360px;
+        padding: 0;
+        margin: 0;
+        overflow-y: scroll;
+    }*/
+
+
+    .content_maindiv {
+        width: 100%;
+        padding-left: 4px;
+        padding-right: 4px;
+        margin-top: 45px;
+    }
+
+
+
+    .btn_keipro {
+
+        height: 40px;
+        min-width: 60px;
+        text-align: center;
+        font-size: 15px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        font-weight: normal;
+
+    }
+
+    .btn_scpecial {
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        height: 42px;
+        font-weight: normal;
+        min-width: 52px;
+    }
+    /*#settlement_letter_choice1{*/
+        /*height: 40px !important;*/
+    /*}*/
+
+    .btn_table {
+        text-align: center;
+        font-size: 18px;
+        padding: 3px 15px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        min-width: 60px;
+        height: 50px;
+        font-weight: normal;
+    }
+
+    .word_btn_container {
+        height: 246px;
+        position: fixed;
+        overflow-x: hidden;
+        /*overflow: hidden;*/
+    }
+
+    .table_of_contantes {
+        background-color: #FFF;
+        border: 2px solid #ababab;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        /*margin: 10px;*/
+        padding: 10px;
+        position: fixed;
+        bottom: 2px;
+        right: 20px;
+        height: 550px !important;
+    }
+
+    .popup_button {
+        font-size: 18px;
+        padding: 6px;
+        min-width: 80px;
+        height: 50px;
+        font-weight: normal;
+    }
+
+    /*.home_page_navi {
+        position: fixed;
+        right: 50px;
+        bottom: 10px;
+        padding: 4px;
+        font-weight: normal;
+        font-size: 16px;
+    }*/
+    .notification_aria {
+        position: fixed;
+        right: 50px;
+        bottom: 10px;
+        padding: 4px;
+        font-weight: normal;
+        font-size: 16px;
+    }
+    .table_of_contantes_title_aria {
+        display: none;
+    }
+
+    .btn_popup {
+        text-align: center;
+        font-size: 18px;
+        padding: 6px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        min-width: 8px;
+        height: 5px;
+        font-weight: normal;
+    }
+
+    .word_table_content_scroll_prant {
+        height: 310px;
+        position: fixed;
+        overflow-x: hidden;
+        width: 300px;
+        overflow: hidden;
+    }
+
+    .word_table_content_scroll_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+    .table_of_contantes .table-bordered > tbody > tr > td {
+        font-size: 18px;
+        /*padding: 30px 8px;*/
+    }
+
+    .font_family_aria td {
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .font_size_aria table td {
+        font-size: 18px;
+    }
+
+    .font_size_aria .table > tbody > tr > td {
+        /*padding: 30px;*/
+    }
+
+    .content_tale_rasponsive {
+        width: 880px;
+    }
+
+    .font_size_table_parent {
+        height: 350px;
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .font_size_table_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+    .font_family_aria_parent {
+        height: 220px;
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .font_family_aria_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+    /*.word_image_selection_message {
+        position: fixed;
+        width: 300px;
+        right: 50px;
+        bottom: 5px;
+        padding: 4px;
+    }*/
+
+
+    /*#blanck_document_message {
+        right: 50px !important;
+    }
+
+    #blanck_document_message .panel-body {
+        padding: 5px;
+    }*/
+
+
+}
+
+
+/* Size by Rajib Galaxy S5 Landscape  */
+
+@media screen and (device-width: 640px) and (device-height: 360px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+
+    /*.flex-container {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        -ms-flex-pack: start;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -ms-flex-line-pack: justify;
+        align-content: space-between;
+        -ms-flex-align: start;
+        -webkit-box-align: start;
+        align-items: flex-start;
+    }*/
+    .mobile_width {
+        padding-left: 4px;
+        padding-right: 4px;
+        width: 100%;
+        float: left !important;
+        overflow-x: scroll;
+    }
+
+    .content_maindiv {
+
+        width: 100% !important;
+        float: left !important;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    /*.word_btn_containers {
+        width: 90%;
+        float: left !important;
+        overflow-x: scroll;
+        z-index: 1500;
+    }*/
+
+    /*.home_page_navi {
+        position: fixed;
+        right: 100px;
+        bottom: 10px;
+        padding: 4px;
+        font-size: 18px;
+        width: 500px;
+    }*/
+    .notification_aria {
+        position: fixed;
+        right: 100px;
+        bottom: 10px;
+        padding: 4px;
+        font-size: 18px;
+        width: 500px;
+    }
+    .table_of_contantes_title_aria {
+        display: none;
+    }
+
+    .btn_keipro {
+        text-align: center;
+        font-size: 14px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 4px 4px 0px;
+        height: 40px;
+        min-width: 60px;
+        font-weight: normal;
+    }
+
+    .btn_scpecial {
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+        height: 40px;
+        font-weight: normal;
+        min-width: 52px;
+    }
+
+    .btn_table {
+        text-align: center;
+        font-size: 12px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 4px 4px 0px;
+        min-width: 60px;
+        height: 30px;
+        font-weight: normal;
+    }
+
+    .content_title td {
+        font-size: 22px;
+    }
+
+    .table_of_contantes {
+        background-color: #FFF;
+        border: 2px solid #ababab;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        padding: 15px;
+        position: fixed;
+        bottom: 2px;
+        right: 20px;
+        height: 600px !important;
+    }
+    .popup_button {
+        font-size: 16px;
+        padding: 6px;
+        min-width: 60px;
+        height: 40px;
+        font-weight: normal;
+        margin: 0 4px 4px 0;
+    }
+
+
+    .word_table_content_scroll_prant {
+        height: 200px;
+        width: 550px;
+        position: fixed;
+        overflow-x: hidden;
+        overflow: hidden;
+    }
+
+    .word_table_content_scroll_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+
+    .table_of_contantes .table-bordered > tbody > tr > td {
+        font-size: 14px;
+    }
+
+    .table_of_contantes {
+        height: 290px !important;
+    }
+
+
+    .font_color_aria table td {
+        width: 100px;
+        height: 50px;
+    }
+
+    .font_color_aria {
+        width: 25%;
+    }
+
+    .font_size_aria .table > tbody > tr > td {
+        padding: 0px;
+    }
+    .font_size_aria {
+        width: 30%;
+    }
+
+    .font_family_aria {
+        font-size: 18px;
+        width: 30%;
+    }
+
+    .font_family_aria .table > tbody > tr > td {
+        /*padding: 25px;*/
+    }
+
+    .content_tale_rasponsive {
+        width: 885px;
+    }
+
+    .font_size_table_parent {
+        height: 350px;
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .font_size_table_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+    .font_family_aria_parent {
+        height: 220px;
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .font_family_aria_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+    .word_btn_container {
+        height: 160px;
+        position: fixed;
+        overflow-x: hidden;
+        /*overflow: hidden;*/
+    }
+
+    /*.word_image_selection_message {
+        position: fixed;
+        right: 100px;
+        bottom: 5px;
+        padding: 4px;
+    }*/
+
+    /*#blanck_document_message {
+        right: 130px !important;
+        width: 400px;
+    }
+
+    #blanck_document_message .panel-body {
+        padding: 5px;
+    }*/
+
+
+
+
+
+
+
+
+}
+
+@media screen and (device-width: 640px) and (device-height: 360px) and (orientation: landscape) {
+
+    body {
+        padding-top: 4px;
+    }
+
+    .btn_keipro {
+        font-size: 13px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 6px;
+        margin: 0px 4px 4px 0px;
+        height: 28px;
+        min-width: 50px;
+        font-weight: normal;
+    }
+
+    .btn_scpecial {
+        text-align: center;
+        font-size: 13px;
+        padding: 10px;
+        color: #fff !important;
+        border-radius: 6px;
+        margin: 0px 10px 10px 0px;
+        height: 28px;
+        font-weight: normal;
+        min-width: 50px;
+        line-height: 10px;
+    }
+
+
+    .panel-body {
+        padding: 5px;
+    }
+
+
+    .content_maindiv {
+        margin-top: 30px;
+        /*-------- for mobile view ---------*/
+    }
+
+
+
+
+}
+
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Portrait */
+
+@media only screen and (min-device-height: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+
+    body {
+        /*padding-top: 4px !important;*/
+        padding-top: .01px !important;
+
+    }
+
+
+    .mobile_width {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .content_maindiv {
+        /*padding-left: 4px;*/
+        padding-left: 0;
+        margin-top: 3.5em;
+        padding-right: 4px;
+        display: block;
+
+    }
+
+
+    /*.flex-container {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }*/
+
+    
+    .btn_keipro {
+        border-radius: 6px;
+        font-size: 16px;
+        padding: 3px;
+        margin: 0px 6px 10px 0px;
+        height: 40px !important;
+        min-width: 60px;
+        font-weight: normal;
+
+    }
+    .sign_out_btn {
+        height: 40px !important;
+    }
+
+    .btn_scpecial {
+        border-radius: 6px;
+        margin: 0px 4px 0px 0px;
+        height: 35px;
+        min-width: 60px;
+        font-weight: normal;
+    }
+
+    .btn_table {
+        text-align: center;
+        font-size: 13px;
+        padding: 3px 0px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 5px 6px 0px;
+        min-width: 56px;
+        height: 40px;
+        font-weight: normal;
+    }
+
+    .word_btn_container {
+        height: 350px;
+        position: fixed;
+        overflow-x: hidden;
+        /*overflow: hidden;*/
+    }
+
+    .table_of_contantes {
+        background-color: #FFF;
+        border: 2px solid #ababab;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        /*margin-bottom: -80px;*/
+        padding: 10px;
+        /*position: fixed;*/
+        position: relative;
+        top: 150px;
+        bottom: 2px;
+        right: 20px;
+        height: 550px !important;
+    }
+
+    .popup_button {
+        font-size: 18px;
+        padding: 6px;
+        min-width: 80px;
+        height: 50px;
+        font-weight: normal;
+    }
+
+    /*.home_page_navi {
+        position: fixed;
+        right: 50px;
+        bottom: 10px;
+        padding: 4px;
+        font-weight: normal;
+        font-size: 16px;
+        width: 80% !important;
+
+    }*/
+    .notification_aria {
+        position: fixed;
+        right: 50px;
+        bottom: 10px;
+        padding: 4px;
+        font-weight: normal;
+        font-size: 16px;
+        width: 80% !important;
+
+    }
+    .table_of_contantes_title_aria {
+        display: none;
+    }
+
+    .btn_popup {
+        text-align: center;
+        font-size: 18px;
+        padding: 6px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        min-width: 8px;
+        height: 5px;
+        font-weight: normal;
+    }
+
+    .word_table_content_scroll_prant {
+        height: 310px;
+        position: fixed;
+        overflow-x: hidden;
+        width: 300px;
+        overflow: hidden;
+    }
+
+    .word_table_content_scroll_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+    .table_of_contantes .table-bordered > tbody > tr > td {
+        font-size: 18px;
+
+    }
+
+
+    .font_family_aria td {
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .font_size_aria table td {
+        font-size: 18px;
+    }
+
+    .font_size_aria .table > tbody > tr > td {}
+
+    .content_tale_rasponsive {
+        width: 880px;
+    }
+
+    .font_size_table_parent {
+        height: 350px;
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .font_size_table_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+    .font_family_aria_parent {
+        height: 220px;
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .font_family_aria_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+    /*.word_image_selection_message {
+        position: fixed;
+        width: 300px;
+        right: 50px;
+        bottom: 5px;
+        padding: 4px;
+    }*/
+
+
+    /*#blanck_document_message {
+        right: 40px !important;
+    }
+
+    #blanck_document_message .panel-body {
+        padding: 10px;
+    }*/
+
+
+}
+
+
+
+
+/*--------------iPhone 6 Landscape---------------------*/
+
+@media screen and (device-width: 667px) and (device-height: 375px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    body {
+        padding-top: 4px !important;
+
+    }
+
+    .content_maindiv {
+        float: left !important;
+        padding-left: 4px;
+        padding-right: 4px;
+
+    }
+    .mobile_width {
+
+        float: right !important;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    /*.word_btn_containers {
+        height: 100px;
+        overflow: scroll;
+        position: fixed;
+        width: 98%;
+        margin: 0 auto;
+        z-index: 1500;
+    }*/
+
+    .btn_keipro {
+        font-size: 14px;
+        border-radius: 6px;
+        margin: 0px 10px 0px 0px;
+        height: 35px;
+        min-width: 60px;
+    }
+    .btn_scpecial {
+        font-size: 14px;
+        border-radius: 6px;
+        margin: 0px 2px 0px 0px;
+        height: 35px;
+        min-width: 60px;
+    }
+
+    /*.home_page_navi {
+        position: fixed;
+        right: 100px;
+        bottom: 10px;
+        padding: 4px;
+        font-size: 18px;
+        width: 500px;
+    }*/
+    .notification_aria {
+        position: fixed;
+        right: 100px;
+        bottom: 10px;
+        padding: 4px;
+        font-size: 18px;
+        width: 500px;
+    }
+    .table_of_contantes_title_aria {
+        display: none;
+    }
+
+
+
+    .btn_table {
+        text-align: center;
+        font-size: 18px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 10px 10px 0px;
+        min-width: 80px;
+        height: 50px;
+        font-weight: normal;
+    }
+
+    .content_title td {
+        font-size: 22px;
+    }
+
+    .table_of_contantes {
+        background-color: #FFF;
+        border: 2px solid #ababab;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        padding: 10px;
+        position: fixed;
+        bottom: 2px;
+        right: 20px;
+        height: 600px !important;
+    }
+    .popup_button {
+        font-size: 14px;
+        padding: 13px;
+        min-width: 70px;
+        height: 46px;
+        margin: 0 4px 4px 0;
+
+    }
+
+
+    .word_table_content_scroll_prant {
+        height: 200px;
+        position: fixed;
+        overflow-x: hidden;
+        width: 580px;
+        overflow: hidden;
+    }
+
+    .word_table_content_scroll_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow: scroll;
+
+    }
+
+    .table_of_contantes .table-bordered > tbody > tr > td {
+        font-size: 18px;
+    }
+
+    .table_of_contantes {
+        height: 340px !important;
+    }
+
+
+    /*.font_size_aria table td{
+        font-size: 32px;
+        height: 90px;
+        width: 90px;
+    }*/
+    .font_color_aria table td {
+        width: 100px;
+        height: 50px;
+    }
+
+    .font_color_aria {
+        width: 25%;
+    }
+
+    .font_size_aria .table > tbody > tr > td {
+        /*padding: 25px;*/
+    }
+    .font_size_aria {
+        width: 30%;
+    }
+
+    .font_family_aria {
+        font-size: 18px;
+    }
+    .font_family_aria {
+        width: 30%;
+    }
+
+    .font_family_aria .table > tbody > tr > td {
+        /*padding: 25px;*/
+    }
+
+    .content_tale_rasponsive {
+        width: 885px;
+    }
+
+    .font_size_table_parent {
+        height: 350px;
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .font_size_table_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+    .font_family_aria_parent {
+        height: 220px;
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .font_family_aria_child {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -17px;
+        overflow-y: scroll;
+    }
+
+    .word_btn_container {
+        height: 350px;
+        position: fixed;
+        overflow-x: hidden;
+
+    }
+
+    /*.word_image_selection_message {
+        position: fixed;
+        right: 100px;
+        bottom: 5px;
+        padding: 4px;
+    }*/
+
+    .btn_scpecial {
+        border-radius: 6px;
+        min-width: 60px;
+        height: 35px;
+    }
+
+
+    .btn_table {
+        text-align: center;
+        font-size: 13px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 6px 10px 0px;
+        min-width: 64px;
+        height: 40px;
+        font-weight: bold;
+
+    }
+
+    .my_class {
+        font-size: 14px;
+        border: none;
+        margin-bottom: 0px !important;
+        margin-left: 4px !important;
+        margin-top: 4px !important;
+
+
+    }
+
+    /*#blanck_document_message {
+        right: 110px !important;
+        width: 55%;
+
+    }*/
+    .panel-body {
+        padding: 5px;
+    }
+
+
+
+}
+
+/*---------- iphone 6+ -------------*/
+
+@media only screen and (min-device-width: 736px) and (max-device-width: 414px) and (width: 736px) and (height: 414px) and (orientation: landscape) and (color: 8) {
+
+    .btn_table {
+        text-align: center;
+        font-size: 13px;
+        padding: 3px;
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 0px 6px 10px 0px;
+        min-width: 64px;
+        height: 40px;
+        font-weight: bold;
+    }
+
+    .mobile_width {
+        width: 12% !important;
+        float: right !important;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .content_maindiv {
+        width: 88% !important;
+        float: left !important;
+        padding-left: 4px;
+        padding-right: 4px;
+
+    }
+
+
+
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (width: 375px) and (height: 559px) and (orientation: portrait) and (color: 8) and (device-aspect-ratio: 375/667) and (aspect-ratio: 375/559) and (device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+
+
+
+
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+
+
+    .padding5px {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    /*.flex-container {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        height: 42px;
+        -ms-flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        -ms-flex-pack: start;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -ms-flex-line-pack: justify;
+        align-content: space-between;
+        -ms-flex-align: start;
+        -webkit-box-align: start;
+        align-items: flex-start;
+    }*/
+
+    /*#blanck_document_message {
+        right: 50px !important;
+    }
+
+    #blanck_document_message.panel-body {
+        padding: 5px;
+    }*/
+
+
+    div#popover291550 {
+        display: none;
+    }
+
+
+
+}
+
+/**------------------------------=========== IPAD  ============-----------------------------------**/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+    
+     /*.flex-container {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-direction: column;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        -ms-flex-pack: start;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -ms-flex-line-pack: justify;
+        align-content: space-between;
+        -ms-flex-align: start;
+        -webkit-box-align: start;
+        align-items: flex-start;
+    }*/
+
+}
+
