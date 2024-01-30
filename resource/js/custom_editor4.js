@@ -638,10 +638,10 @@ tinymce.init({
                 $("#font_size_36").addClass('checked');
             } else if (get_font_size == NaN) {
                 $(".font_size").removeClass('checked');
-                $("#font_size_14").addClass('checked');
+                $("#font_size_12").addClass('checked');
             }else{
                 $(".font_size").removeClass('checked');
-                $("#font_size_14").addClass('checked');
+                $("#font_size_12").addClass('checked');
             }
             // console.log(tinymce.activeEditor.dom.getStyle(img, 'font-size', false));
             // alert(img.id);

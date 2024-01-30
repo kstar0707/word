@@ -1349,7 +1349,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-lg-12" style="padding: 0;">
         <!-- <div class="col-md-12 font_size_table_parent">
         <div class="font_size_table_child"> -->
-        <input type="hidden" id="change_font_size" value="18.666667px" name="">
+        <input type="hidden" id="change_font_size" value="16px" name="">
         <table class="table table-bordered" id="font-size-popup-table" style="margin: 0;">
             <tr>
                 <td onclick="change_font_size('10.666667px', 8)" class="font_size" id="font_size_8">8</td>

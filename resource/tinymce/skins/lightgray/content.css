@@ -51,7 +51,8 @@ img{
 .my_class p, .email_editor p{
     /*margin-top: 0.7em !important;*/
     margin: -4px 0em 0.1em 0em;
-    text-indent: 20px;
+    text-indent: 15px;
+    padding-right: 15px;
 }
 
 
