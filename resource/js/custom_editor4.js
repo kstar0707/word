@@ -1390,6 +1390,35 @@ function change_font_size(font_size, font_size_number) {
     // tinymce.get('doc_content3').execCommand("fontSize", false, font_size);
     // tinymce.get('doc_content4').execCommand("fontSize", false, font_size);
     // tinymce.get('doc_content5').execCommand("fontSize", false, font_size);
+    var elements = document.querySelectorAll('.my_class');
+
+    elements.forEach(function(el) {
+        console.log(el);
+
+        el.style.font_size = font_size;
+        if (fontSize === '16px') {
+            el.style.paddingLeft = '20px';
+            el.style.paddingRight = '20px';
+        } else if (fontSize === '18px') {
+            el.style.paddingLeft = '50px';
+            el.style.paddingRight = '50px';
+        }
+    });
+    // elements.forEach(function(el) {
+    //     el.style.fontSize = fontSize;
+    //     console.log(el.style.fontSize);
+
+    //     // Now adjust the padding based on the font size
+    //     var currentFontSize = window.getComputedStyle(el).fontSize;
+    //     if (currentFontSize === '16px') {
+    //         el.style.paddingLeft = '20px';
+    //         el.style.paddingRight = '20px';
+    //     } else if (currentFontSize === '18.6667px') {
+    //         alert("asdasdasd");
+    //         el.style.padding = '50px';
+    //     }
+    //     // Add more conditions if needed
+    // });
 }
 
 // Start Email Functions
@@ -1747,3 +1776,12 @@ var delay = (function () {
         timer = setTimeout(callback, ms);
     };
 })();
+
+document.addEventListener("DOMContentLoaded", function() {
+    var newPadding = "20px"; // The new padding value
+    var elements = document.querySelectorAll('.map_class p');
+    
+    elements.forEach(function(el) {
+        el.style.padding = newPadding;
+    });
+});
